@@ -47,7 +47,7 @@ def generate_strong_password(length=12):
     return ''.join(random.choice(characters) for _ in range(length))
 
 # Set page configr
-st.set_page_config(page_title=" Password Generator")
+st.set_page_config(page_title=" Password Strength Meter")
 # Streamlit UI
 st.title("🔒 Password Strength Meter")
 password = st.text_input("Enter your password", type="password")
